@@ -171,6 +171,7 @@ header {
 .right{
     width: 40%;
     text-align: center;
+    padding-top: 2%;
 }
 .left h2, .right h2 {
     color: #2c3e50;
@@ -218,16 +219,17 @@ form button {
     cursor: pointer;
     margin-top: 10px;
 }
-.right{
+.contact_content{
     height: 20%;
     background-color: #ecf0f1;
-    border-radius: 5%;
+    border-radius: 1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: #000;
 }
 .right h2{
     color: #2c3e50;
 }
+
 .social-icons {
     
     align-items: center;

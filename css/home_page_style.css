@@ -5,7 +5,7 @@
   --text-dark: #333333;
   --text-light: #767268;
   --extra-light: #ffffff;
-    font-size: 16px; /* 1rem = 16px */
+    font-size: 1rem; /* 1rem = 16px */
 }
 
 body, html {
@@ -14,7 +14,7 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #EAEAEA;
-    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -23,7 +23,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
     top: 0;
     background-color: #ffffff;
     opacity: 80%;
@@ -206,8 +205,9 @@ header {
     height: 0.10rem; /* Thickness of the line */
     background-color: #777171; /* Color of the line */
 }
-.img2{
+.img2 img{
     padding-top: 5rem;
+    width: 100%;
 }
 .heading1 h1{
     font-family: 'Kantumruy';
@@ -985,6 +985,9 @@ form button {
     color: #ffffff;
     padding: 20px 0;
     text-align: left;
+    position: relative;
+    bottom: 0;
+   
 }
 
 .footer-container {
@@ -1047,6 +1050,8 @@ form button {
     padding: 10px 0;
     border-top: 1px solid #333;
     margin-top: 20px;
+    position: relative;
+    
 }
 
 .footer-bottom p {
