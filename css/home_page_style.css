@@ -1302,7 +1302,7 @@ form button {
 }
 
 /* Mobile View (max-width: 350px) */
-@media (max-width: 351px) {
+@media (max-width: 551px) {
     header {
         flex-direction: column;
         padding: 0.625rem;
