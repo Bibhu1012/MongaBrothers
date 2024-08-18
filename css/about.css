@@ -355,7 +355,7 @@ header {
     margin: 0;
     font-size: 14px;
 }
-@media (max-width: 351px) {
+@media (max-width: 551px) {
     header {
         flex-direction: column;
         padding: 0.625rem;
