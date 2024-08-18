@@ -7,6 +7,10 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #EAEAEA;
+    overflow-x: hidden;
+}
+.nav-toggle, .toggle-btn, .close-btn{
+    display: none;
 }
 header {
     display: flex;
@@ -72,6 +76,21 @@ header {
     font-size: 1rem; /* 16px */
     padding-left: 1rem;
     padding-right: 3rem;
+}
+.select-language{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-language:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("https://flagsapi.com/US/flat/32.png");
+    margin-top: 19%;
+    margin-right: .5rem;
 }
 .about-us {
     margin-top: 4.7%;
@@ -320,4 +339,177 @@ form button {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+}
+
+@media (max-width: 351px) {
+    header {
+        flex-direction: column;
+        padding: 0.625rem;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 0.625rem;
+        
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 65%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .navbar li {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding-left: 20%;
+        padding-top: 20%;
+    }
+
+    .header-right {
+        display: none;
+    }
+    .select-language:before{
+        margin-top: 19%;
+        margin-right: .5rem;
+    }
+
+    /* Show navbar and header-right when toggle button is checked */
+    .nav-toggle:checked ~ nav.navbar,
+    .nav-toggle:checked ~ .header-right {
+        display: flex;
+    }
+
+    /* Toggle button styles */
+    .toggle-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.625rem;
+        right: 1rem;
+    }
+
+    /* Close button styles */
+    .close-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.625rem;
+        right: 1rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    /* Adjust logo size */
+    .logo img {
+        width: 100%;
+        
+    }
+    .contactsec h1{
+        font-size: 1.4rem;
+    }
+    .line4{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .form-section {
+        background-color: #ecf0f1;
+        color: #000000;
+        padding: 20px;
+    }
+    .contact-info {
+        margin-bottom: 20px;
+    }
+    
+    .contact-info p {
+        margin: 10px 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .contact-info i {
+        margin-right: 10px;
+    }
+    
+    .contact-info a {
+        color: #000000;
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+    .contact_content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+    }
+    .left h2, .right h2 {
+        color: #2c3e50;
+        font-size: 20px;
+        margin: 20px;
+    }
+    .career-btn{
+        border: #000;
+    }
+    .social-icons a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        margin: 1rem;
+        color: #000000;
+    }
+    .about-us {
+        margin-top: 0%;
+        height: 40vh;
+    }
+    .overlay h1 {
+        text-align: center;
+        padding-left: 18%;
+        font-size: 2em;
+    }
+    .footer-container {
+        display: block;
+    }
+    
+    .footer-left {
+        max-width: 100%;
+    }
+    
+    .footer-left p {
+        padding: 0 0 20px;
+        padding-right: 0%;
+    }
+    
+    .footer-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 0%;
+        padding-right: 5%;
+    }
+    .footer-column a h3 {
+        padding-top: 3%;
+    }
 }

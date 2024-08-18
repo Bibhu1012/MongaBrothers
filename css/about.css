@@ -7,8 +7,11 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #EAEAEA;
+    overflow-x: hidden;
 }
-
+.nav-toggle, .toggle-btn, .close-btn{
+    display: none;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -74,6 +77,21 @@ header {
     padding-left: 1rem;
     padding-right: 3rem;
 }
+.select-language{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-language:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("https://flagsapi.com/US/flat/32.png");
+    margin-top: 19%;
+    margin-right: .5rem;
+}
 .about-us {
     position: relative;
     width: 100%;
@@ -119,7 +137,7 @@ header {
 }
 .company-content {
     display: flex;
-    max-width: 1200px;
+    width: 100%;
     text-align: left;
     padding: 20px;
 }
@@ -336,4 +354,236 @@ header {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+}
+@media (max-width: 351px) {
+    header {
+        flex-direction: column;
+        padding: 0.625rem;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 0.625rem;
+        
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 65%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .navbar li {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding-left: 20%;
+        padding-top: 20%;
+    }
+
+    .header-right {
+        display: none;
+    }
+    .select-language:before{
+        margin-top: 19%;
+        margin-right: .5rem;
+    }
+
+    /* Show navbar and header-right when toggle button is checked */
+    .nav-toggle:checked ~ nav.navbar,
+    .nav-toggle:checked ~ .header-right {
+        display: flex;
+    }
+
+    /* Toggle button styles */
+    .toggle-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.625rem;
+        right: 1rem;
+    }
+
+    /* Close button styles */
+    .close-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.625rem;
+        right: 1rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    /* Adjust logo size */
+    .logo img {
+        width: 100%;
+        
+    }
+    .about-us {
+        position: relative;
+        width: 100%;
+        background-image: url('../images/aboutimg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+    }
+    .overlay h1 {
+        padding-top: 25%;
+        margin-left: 5%;
+        color: white;
+        font-size: 2rem;
+        font-family: 'Poppins';
+        font-style: normal;
+        /* font-family: 'Arial', sans-serif; */
+        font-weight: 700;
+        text-align: left;
+        
+    }
+    .company-section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        max-width: 1200px;
+        margin: 5% auto;
+        background-color: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .company-content {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+    .left_side{
+        width: 100%;
+        padding-top: 0%;
+    }
+    .left_side img{
+        /* display: none; */
+        width: 10%;
+    }
+    .title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        display: block;
+        align-items: center;
+    }
+    .right_side{
+        padding-left: 0%;
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .right_side p{
+        padding-left: 0;
+        padding-right: 5%;
+    }
+    .inline-logo {
+        padding-left: 5%;
+        /* display: none; */
+        height: auto;
+    }
+    .about h3{
+        text-align: center;
+        padding-top: 8%;
+        font-size: 2rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .content-section {
+
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .intro {
+        display: block;    
+        margin-bottom: 0px;
+    }
+    .pic1 img{
+        padding-left: 35%;
+    }
+    .intro .pic1 .logo {
+        width: 10vh;
+        height: auto;
+        padding-top: 45rem;
+    }
+    .intro p {
+        padding-left: 0%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .card-container {
+        display: block;
+        justify-content: center;
+    }
+    
+    .card1 {
+        flex: 0;
+        height: 65vh;
+        margin-bottom: 5%;
+    }
+    .card2 {
+        flex: 0;
+        height: 65vh;
+        margin-bottom: 5%;
+    }
+    .card3 {
+        flex: 0;
+        height: 65vh;
+        margin-bottom: 5%;
+    }
+    
+    .card-body {
+        padding: 20px;
+        margin-left: 2%;
+        height: 15hv;
+        width: 82%;
+
+    }
+    
+    .card-body p {
+        height: 40vh;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .footer-container {
+        display: block;
+    }
+    
+    .footer-left {
+        max-width: 100%;
+    }
+    
+    .footer-left p {
+        padding: 0 0 20px;
+        padding-right: 0%;
+    }
+    
+    .footer-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 0%;
+        padding-right: 5%;
+    }
+    .footer-column a h3 {
+        padding-top: 3%;
+    }
 }

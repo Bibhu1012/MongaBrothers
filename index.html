@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <link rel="stylesheet" href="css/home_page_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
             <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-            
         </div>
+        <!-- Toggle Button for Mobile -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="toggle-btn">☰</label>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,15 +26,33 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <label for="nav-toggle" class="close-btn">✖</label>
         </nav>
+        
+        
         <div class="header-right">
             <a href="#" class="icon"><i class="fas fa-camera"></i></a>
             <a href="#" class="icon"><i class="fas fa-cog"></i></a>
             <a href="#" class="icon"><i class="fas fa-search"></i></a>
             <div class="divider"></div>
-            <a href="#" class="translate">EN</a>
+            <div class="translate">
+                <div class="select-language">
+                    <h4>ENG</h4>
+                </div>
+                <!-- <ul>
+                    <li>
+                        <a href="#" class="en">English</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hi">Hindi</a>
+                    </li>
+                </ul> -->
+                <!-- <a href="#" class="translate">EN</a> -->
+            </div>
+            
         </div>
     </header>
+
 
     <!-- Add your content here -->
     <main>
@@ -41,8 +63,10 @@
         <div class="content-wrapper">
             <div class="text-content">
                 <p>
-                    Dassault Aviation is a French aerospace company with proven dual expertise as a manufacturer of both military aircraft and business jets.
-                    Creator of more than 100 prototypes in the last century, with over 10,000 aircraft delivered to 90 countries.
+                    Dassault Aviation is a French aerospace company with proven dual expertise as a manufacturer of both
+                    military aircraft and business jets.
+                    Creator of more than 100 prototypes in the last century, with over 10,000 aircraft delivered to 90
+                    countries.
                     <br><br>READ “ABOUT US”
                 </p>
                 <div class="rectangle"></div>
@@ -95,7 +119,12 @@
         <section class="">
             <div class="content">
                 <h1>Industries We Serve <span>✏️</span></h1>
-                <p>Today, Sujan Industries is a significant part of the Sujan Group with multiple plants manufacturing Rubber parts, Rubber to metal bonded items, Anti-vibration products, Plastic and metal Casting Components. We provide design solutions and products to the Indian and American Railroad industry, Aerospace, Defense, Automotive, Commercial vehicle, Power, Electrical and Heavy Vehicles industries. The one theme that has stood the test of time at Sujan Industries is the Quality of product we deliver.</p>
+                <p>Today, Sujan Industries is a significant part of the Sujan Group with multiple plants manufacturing
+                    Rubber parts, Rubber to metal bonded items, Anti-vibration products, Plastic and metal Casting
+                    Components. We provide design solutions and products to the Indian and American Railroad industry,
+                    Aerospace, Defense, Automotive, Commercial vehicle, Power, Electrical and Heavy Vehicles industries.
+                    The one theme that has stood the test of time at Sujan Industries is the Quality of product we
+                    deliver.</p>
                 <div class="cards">
                     <a href="defence_product.html" class="railcar">
                         <img src="images/railway.jpg" alt="">
@@ -147,10 +176,10 @@
             <div class="right-side">
                 <h2>WORLD CLASS FROM EUROPE</h2>
                 <p>
-                    Diehl Defence GmbH & Co. KG concentrates the Diehl Group's business activities 
-                    in the fields of defence and security and is a leading supplier of air defence 
-                    systems. As partner of the German Bundeswehr and international armed forces, 
-                    Diehl Defence develops and delivers high-tech equipment in the fields of 
+                    Diehl Defence GmbH & Co. KG concentrates the Diehl Group's business activities
+                    in the fields of defence and security and is a leading supplier of air defence
+                    systems. As partner of the German Bundeswehr and international armed forces,
+                    Diehl Defence develops and delivers high-tech equipment in the fields of
                     ground-based air defence, guided missiles, ammunition as well as training and protection.
                 </p>
                 <button class="read-more">More About Us</button>
@@ -166,10 +195,12 @@
                 <div class="purpose_card">
                     <h3>Card Heading</h3>
                     <h5>Category</h5>
-                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that 
+                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that
                         it is difficult to stay on top of everything that is going on at sea. 
                     </p>
-                    <button class="button">Read More</button>
+                    <a href="#">
+                        <button class="button">Read More</button>
+                    </a>
                 </div>
             </div>
             <div class="image-container2">
@@ -177,10 +208,12 @@
                 <div class="purpose_card2">
                     <h3>Card Heading</h3>
                     <h5>Category</h5>
-                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that 
+                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that
                         it is difficult to stay on top of everything that is going on at sea. 
                     </p>
-                    <button class="button2">Read More</button>
+                    <a href="#">
+                        <button class="button2">Read More</button>
+                    </a>
                 </div>
             </div>
             <div class="image-container">
@@ -188,10 +221,12 @@
                 <div class="purpose_card">
                     <h3>Card Heading</h3>
                     <h5>Category</h5>
-                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that 
+                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that
                         it is difficult to stay on top of everything that is going on at sea. 
                     </p>
-                    <button class="button">Read More</button>
+                    <a href="#">
+                        <button class="button">Read More</button>
+                    </a>
                 </div>
             </div>
             <div class="image-container2">
@@ -199,10 +234,12 @@
                 <div class="purpose_card2">
                     <h3>Card Heading</h3>
                     <h5>Category</h5>
-                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that 
+                    <p>Covering some 70 per cent of the Earth's surface, our oceans are so vast that
                         it is difficult to stay on top of everything that is going on at sea. 
                     </p>
-                    <button class="button2">Read More</button>
+                    <a href="#">
+                        <button class="button2">Read More</button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -215,7 +252,8 @@
                 <div class="testimonial_grid">
                     <div class="testimonial_card">
                         <span><i class="ri-double-quotes-l"></i></span>
-                        <p>I've been working with these guys for a long time and I can say that my house is in perfect hands.</p>
+                        <p>I've been working with these guys for a long time and I can say that my house is in perfect
+                            hands.</p>
                         <hr>
                         <img src="images/pic-1.jpg" alt="user" />
                         <p class="name">Allan Collins</p>
@@ -223,8 +261,8 @@
                     <div class="testimonial_card">
                         <span><i class="ri-double-quotes-l"></i></span>
                         <p>
-                          Working with Sentry Oak is just great, every problem in my house is
-                          solved in a matter of days.
+                            Working with Sentry Oak is just great, every problem in my house is
+                            solved in a matter of days.
                         </p>
                         <hr />
                         <img src="images/pic-2.jpeg" alt="user" />
@@ -233,8 +271,8 @@
                     <div class="testimonial_card">
                         <span><i class="ri-double-quotes-l"></i></span>
                         <p>
-                          Once a pipe burst in my kitchen and an hour later it was already
-                          repaired, thanks to Sentry Oak.
+                            Once a pipe burst in my kitchen and an hour later it was already
+                            repaired, thanks to Sentry Oak.
                         </p>
                         <hr />
                         <img src="images/pic-3.jpg" alt="user" />
@@ -244,11 +282,11 @@
                 <div class="head2">
                     <h4>No two homes are alike!</h4>
                     <p>
-                      Our Elite network, combined with your personal needs, allows us to
-                      create a home plan specifically tailored to you.
+                        Our Elite network, combined with your personal needs, allows us to
+                        create a home plan specifically tailored to you.
                     </p>
                     <button>GET A QUOTE</button>
-                  </div>
+                </div>
             </div>
         </section>
         <section>
@@ -330,7 +368,7 @@
             </div>
             <div class="contact_content">
                 <div class="left">
-                    
+
                     <form>
                         <h3>Send Me A Note</h3>
                         <input type="text" placeholder="Atul Gupta" required>
@@ -345,7 +383,8 @@
                 <div class="right">
                     <h2>Stay Connected</h2>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:contact@investindia.org.in">contact@investindia.org.in</a></p>
+                        <p><i class="fas fa-envelope"></i> <a
+                                href="mailto:contact@investindia.org.in">contact@investindia.org.in</a></p>
                         <p><i class="fas fa-phone-alt"></i> <a href="tel:+911123048155">+91-11-23048155</a></p>
                         <p>Please drop an email or call us, our representative will connect with you soon.</p>
                     </div>
@@ -359,42 +398,68 @@
                         <a href="https://whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
                         <!-- <a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a> -->
                         <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
-                        
+
                         <!-- <a href="https://apple.com" target="_blank" class="fab fa-apple"></a>
                         <a href="https://play.google.com" target="_blank" class="fab fa-google-play"></a> -->
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <script src="contact.js" crossorigin="anonymous"></script>
+        <script src="home_page.js" crossorigin="anonymous"></script>
     </main>
 
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
-                <p>Rolls-Royce develops and delivers complex power and propulsion solutions for safety-critical applications in the air, at sea and on land.</p>
+                <p>Rolls-Royce develops and delivers complex power and propulsion solutions for safety-critical
+                    applications in the air, at sea and on land.</p>
                 <a href="index.html"><img src="images/bglogo.jpg" alt="Monga Brothers Ltd. Logo"></a>
-                
+
             </div>
             <div class="footer-right">
                 <div class="footer-column">
-                    <a href="#"><h3>Innovation</h3></a>
-                    <a href="product_category.html"><h3>Products</h3></a>
-                    <a href="#"><h3>Services</h3></a>
-                    <a href="#"><h3>Sustainability</h3></a>
+                    <a href="#">
+                        <h3>Innovation</h3>
+                    </a>
+                    <a href="product_category.html">
+                        <h3>Products</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Services</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Sustainability</h3>
+                    </a>
                 </div>
                 <div class="footer-column">
-                    <a href="about.html"><h3>About</h3></a>
-                    <a href="contact.html"><h3>Contact Us</h3></a>
-                    <a href="#"><h3>Media</h3></a>
-                    <a href="#"><h3>Careers</h3></a>
+                    <a href="about.html">
+                        <h3>About</h3>
+                    </a>
+                    <a href="contact.html">
+                        <h3>Contact Us</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Media</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Careers</h3>
+                    </a>
                 </div>
                 <div class="footer-column">
-                    <a href="#"><h3>Data Privacy</h3></a>
-                    <a href="#"><h3>Privacy Policy</h3></a>
-                    <a href="#"><h3>Legal Information</h3></a>
-                    <a href="#"><h3>Terms of Use</h3></a>
+                    <a href="#">
+                        <h3>Data Privacy</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Privacy Policy</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Legal Information</h3>
+                    </a>
+                    <a href="#">
+                        <h3>Terms of Use</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -403,6 +468,5 @@
         </div>
     </footer>
 </body>
-</html>
 
-    
+</html>

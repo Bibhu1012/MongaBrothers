@@ -7,8 +7,11 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #EAEAEA;
+    overflow-x: hidden;
 }
-
+.nav-toggle, .toggle-btn, .close-btn{
+    display: none;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +77,21 @@ header {
     padding-left: 1rem;
     padding-right: 3rem;
 }
+.select-language{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
 
+.select-language:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("https://flagsapi.com/US/flat/32.png");
+    margin-top: 19%;
+    margin-right: .5rem;
+}
 
 
 .category-list {
@@ -259,4 +276,132 @@ header {
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+}
+@media (max-width:351px) {
+    header {
+        flex-direction: column;
+        padding: 0.625rem;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 0.625rem;
+        
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 65%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .navbar li {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding-left: 20%;
+        padding-top: 20%;
+    }
+
+    .header-right {
+        display: none;
+    }
+    .select-language:before{
+        margin-top: 19%;
+        margin-right: .5rem;
+    }
+
+    /* Show navbar and header-right when toggle button is checked */
+    .nav-toggle:checked ~ nav.navbar,
+    .nav-toggle:checked ~ .header-right {
+        display: flex;
+    }
+
+    /* Toggle button styles */
+    .toggle-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.625rem;
+        right: 1rem;
+    }
+
+    /* Close button styles */
+    .close-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.625rem;
+        right: 1rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    /* Adjust logo size */
+    .logo img {
+        width: 100%;
+        
+    }
+    .category-list {
+        padding-top: 30%;
+        padding-left: 10%;
+        display: inline-block;
+    }
+    .category-item img {
+        display: block;
+        border-radius: 5%;
+        margin-bottom: 10%;
+    }
+    .category-info {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .product-list {
+        padding-bottom: 5%;
+    }
+    
+    .product-item {
+        display: block;
+    }
+    
+    .product-item img {
+        width: 100%; /* Adjust as needed */
+        height: 30vh;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+    .footer-container {
+        display: block;
+    }
+    
+    .footer-left {
+        max-width: 100%;
+    }
+    
+    .footer-left p {
+        padding: 0 0 20px;
+        padding-right: 0%;
+    }
+    
+    .footer-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 0%;
+        padding-right: 5%;
+    }
+    .footer-column a h3 {
+        padding-top: 3%;
+    }
 }
